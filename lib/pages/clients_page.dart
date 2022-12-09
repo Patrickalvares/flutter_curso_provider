@@ -129,7 +129,7 @@ class _ClientsPageState extends State<ClientsPage> {
                     child: const Text("Salvar"),
                     onPressed: () async {
                       setState(() {
-                        list.clients.add(Client(
+                        list.add(Client(
                             name: nomeInput.text,
                             email: emailInput.text,
                             type: dropdownValue));
@@ -138,7 +138,7 @@ class _ClientsPageState extends State<ClientsPage> {
                     });
               }),
               TextButton(
-                  child: const Text("Calcelar"),
+                  child: const Text("Cancelar"),
                   onPressed: () {
                     Navigator.pop(context);
                   }),
